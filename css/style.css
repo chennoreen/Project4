@@ -1,0 +1,163 @@
+/* CSS Document */
+ul{
+	position:fixed;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	width : 2000px;
+	overflow: hidden;
+	background-color: #e2bebe;
+	
+}
+
+li {
+  float: left;
+} 
+
+
+li a{
+	display: block;
+	width: 160px;
+	transition: 1s;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+}
+
+li a.active{
+	background-color: #b96b9f;
+	color: white;
+}
+
+li a:hover:not(.active){
+	background-color: #f5f687;
+	color: black;
+	width: 180px;
+}
+
+body{
+	padding: 0;
+	margin: 0;
+	font-family: sans-serif;
+	background-color: #6fc2d0;
+}
+
+div{
+	margin: 100px;
+}
+
+section {
+	max-width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 40px;
+	margin-bottom: 20px;
+}
+header {
+	background-color: #6fc2d0;
+	color: white; /* more readable on an orange background */
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+p.serif {
+  font-family: "Petrona", serif;
+}
+
+p.sansserif {
+  font-family: "Brandon Grotesque", sans-serif;
+}
+
+h1.serif {
+  font-family: "Petrona", serif;
+	font-size: 30px;
+	color: #fff;
+}
+
+h1.sansserif {
+  font-family: "Brandon Grotesque", sans-serif;
+}
+
+h3.serif {
+  font-family: "Petrona", serif;
+}
+
+p {
+  font-size: 20px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+/*
+body {
+    background-color: #F2EEE9;
+    font: normal 13px/1.5 Georgia, Serif;
+    color: #333;
+}
+*/
+.wrapper {
+    width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+}
+h5 {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    font-size: 20px;
+    font-weight: normal;
+    text-transform: uppercase;
+    padding: 4px 20px;
+    float: left;
+}
+.clear {
+    clear: both;
+}
+.items {
+    display: block;
+    margin: 20px 0;
+}
+.item {
+    background-color: #fff;
+    float: left;
+    margin: 0 10px 10px 0;
+    width: 300px;
+    padding: 10px;
+    height: 450px;
+}
+.item img {
+    display: block;
+    margin: auto;
+}
+h6 {
+    font-size: 16px;
+    display: block;
+    border-bottom: 1px solid #ccc;
+    margin: 0 0 10px 0;
+    padding: 0 0 5px 0;
+}
+button {
+    border: 1px solid #722A1B;
+    padding: 4px 14px;
+    background-color: #fff;
+    color: #722A1B;
+    text-transform: uppercase;
+    margin: 15px 90px;
+    font-weight: bold;
+    cursor: pointer;
+}
+span {
+    float: right;
+}
+.shopping-cart {
+    display: inline-block;
+    background: url('http://cdn1.iconfinder.com/data/icons/jigsoar-icons/24/_cart.png') no-repeat 0 0;
+    width: 24px;
+    height: 24px;
+    margin: 0 0px 0 0;
+}
+
