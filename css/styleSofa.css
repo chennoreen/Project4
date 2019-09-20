@@ -2,6 +2,7 @@ div {
 	max-width: 1000px;
 	margin-left: auto;
 	margin-right: auto;
+	max-height: 890px;
 }
 
 header {
@@ -12,14 +13,13 @@ header {
 
 
 body {
-  background: linear-gradient(to right, #24243e, #302b63, #24243e);
+  background: linear-gradient(to right, #6fc2d0,#90c8d1, #6fc2d0);
 }
 body.fade {
   transition: 0.6s ease-in-out;
 }
 
 .colours {
-  bottom: 1em;
   display: flex;
   flex-direction: column;
 }
@@ -58,8 +58,8 @@ body.fade {
 }
 
 .couch {
-  width: 1000px;
-  height: 394px;
+  width: 626px;
+  height: 1084px;
   -webkit-transform: scale(0.66);
           transform: scale(0.66);
   position: relative;
@@ -72,7 +72,7 @@ body.fade {
 }
 .couch__overlay {
   z-index: 2;
-  fill: #fcff4d;
+  fill: #ffd4eb;
   mix-blend-mode: multiply;
 }
 .couch__overlay.fade {
@@ -89,7 +89,6 @@ body.fade {
 }
 
 ul{
-	position:fixed;
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
