@@ -88,11 +88,11 @@ p {
 .slider {
   margin: 0 auto;
 	margin-top:20px;
-  max-width: 1080px;
+  width: 100%;
 }
 
 .slide_viewer {
-  height: 450px;
+  height: 550px;
   overflow: hidden;
   position: relative;
 	top:130px;
@@ -137,7 +137,7 @@ p {
   position: absolute;
   right: 0;
   text-align: center;
-height: 100%;
+	margin-top: 140px;
 }
 
 a.slide_btn {
