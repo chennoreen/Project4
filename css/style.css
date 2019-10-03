@@ -31,6 +31,11 @@ li a.active{
 	color: white;
 }
 
+li a.heighlight{
+	background-color: #f5f687;
+	color: black;
+}
+
 li a:hover:not(.active){
 	background-color: #f5f687;
 	color: black;
@@ -45,11 +50,9 @@ body{
 }
 
 section {
-	max-width: 1000px;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 100px;
-	margin-bottom: 20px;
+
+	margin-top:20px;
+	margin-bottom:20px;
 }
 header {
 	
@@ -87,7 +90,6 @@ p {
 
 .slider {
   margin: 0 auto;
-	margin-top:20px;
   width: 100%;
 }
 
@@ -95,7 +97,6 @@ p {
   height: 550px;
   overflow: hidden;
   position: relative;
-	top:130px;
 	width: 100%;
 }
 
@@ -137,7 +138,7 @@ p {
   position: absolute;
   right: 0;
   text-align: center;
-	margin-top: 140px;
+	margin-top: 40px;
 }
 
 a.slide_btn {
@@ -161,7 +162,7 @@ a.slide_btn {
   margin: 0 auto;
   max-width: 100%;
   position: relative;
-  top: -250px;
+	top:-80px;
 }
 
 .previous_btn {
@@ -203,4 +204,10 @@ a.slide_btn {
   .next_btn {
     right: 50px;
   }
+}
+
+.logo{
+	display: block;
+  margin-left: auto;
+  margin-right: auto;
 }

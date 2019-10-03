@@ -92,7 +92,7 @@ ul{
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
-	width : 2000px;
+	width : 100%;
 	overflow: hidden;
 	background-color: #e2bebe;
 	
@@ -115,8 +115,13 @@ li a{
 }
 
 li a.active{
+
 	background-color: #b96b9f;
 	color: white;
+}
+li a.heighlight{
+	background-color: #f5f687;
+	color: black;
 }
 
 li a:hover:not(.active){
