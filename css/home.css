@@ -1,0 +1,65 @@
+/* CSS Document */
+ul{
+	position:fixed;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	width : 2000px;
+	overflow: hidden;
+	background-color: #e2bebe;
+	
+}
+
+li {
+  float: left;
+} 
+
+
+li a{
+	display: block;
+	width: 160px;
+	transition: 1s;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+}
+
+li a.active{
+	background-color: #b96b9f;
+	color: white;
+}
+
+li a:hover:not(.active){
+	background-color: #f5f687;
+	color: black;
+	width: 180px;
+}
+
+body{
+	padding: 0;
+	margin: 0;
+	font-family: sans-serif;
+	background-color: #6fc2d0;
+}
+
+div{
+	margin: 100px;
+}
+
+section {
+	max-width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 100px;
+	margin-bottom: 20px;
+}
+header {
+	
+	background-color: #6fc2d0;
+	color: white; /* more readable on an orange background */
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+

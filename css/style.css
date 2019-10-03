@@ -1,10 +1,10 @@
-/* CSS Document */
+
 ul{
-	position:fixed;
+/*	position:fixed;*/
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
-	width : 2000px;
+	width : 100%;
 	overflow: hidden;
 	background-color: #e2bebe;
 	
@@ -42,10 +42,6 @@ body{
 	margin: 0;
 	font-family: sans-serif;
 	background-color: #6fc2d0;
-}
-
-div{
-	margin: 100px;
 }
 
 section {
@@ -89,121 +85,122 @@ p {
   font-size: 20px;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-}
-/*
-body {
-    background-color: #F2EEE9;
-    font: normal 13px/1.5 Georgia, Serif;
-    color: #333;
-}
-*/
-.wrapper {
-    width: 1000px;
-    margin: 20px auto;
-    padding: 20px;
-}
-h5 {
-    display: inline-block;
-    background-color: #333;
-    color: #fff;
-    font-size: 20px;
-    font-weight: normal;
-    text-transform: uppercase;
-    padding: 4px 20px;
-    float: left;
-}
-.clear {
-    clear: both;
-}
-.items {
-    display: block;
-    margin: 20px 0;
-}
-.item {
-    background-color: #fff;
-    float: left;
-    margin: 0 10px 10px 0;
-    width: 300px;
-    padding: 10px;
-    height: 450px;
-}
-.item img {
-    display: block;
-    margin: auto;
-}
-h6 {
-    font-size: 16px;
-    display: block;
-    border-bottom: 1px solid #ccc;
-    margin: 0 0 10px 0;
-    padding: 0 0 5px 0;
-}
-button {
-    border: 1px solid #722A1B;
-    padding: 4px 14px;
-    background-color: #fff;
-    color: #722A1B;
-    text-transform: upperc ase;
-    margin: 15px 90px;
-    font-weight: bold;
-    cursor: pointer;
-}
-span {
-    float: right;
-}
-.shopping-cart {
-    display: inline-block;
-    background: url('http://cdn1.iconfinder.com/data/icons/jigsoar-icons/24/_cart.png') no-repeat 0 0;
-    width: 24px;
-    height: 24px;
-    margin: 0 0px 0 0;
+.slider {
+  margin: 0 auto;
+	margin-top:20px;
+  max-width: 1080px;
 }
 
+.slide_viewer {
+  height: 450px;
+  overflow: hidden;
+  position: relative;
+	top:130px;
+	width: 100%;
+}
 
-.glass {
+.slide_group {
   height: 100%;
+  position: relative;
   width: 100%;
-  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1376484/jess-harding-lqT6NAmTaiY-unsplash.jpg");
-  background-size: cover;
-  background-position: center;
-  -webkit-clip-path: inset(10em);
-          clip-path: inset(10em);
-  -webkit-filter: blur(20px);
-          filter: blur(20px);
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
-.drop-shadow {
+.slide {
+  display: none;
   height: 100%;
+  position: absolute;
   width: 100%;
-  -webkit-filter: drop-shadow(0px 20px 10px rgba(0, 0, 0, 0.3));
-          filter: drop-shadow(0px 20px 10px rgba(0, 0, 0, 0.3));
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
-.drop-shadow:before {
+
+.slide:first-child {
   display: block;
-  content: "";
-  position: absolute;
-  top: 10em;
-  height: calc(100% - 20em);
-  width: calc(100% - 20em);
-  border-top: 2px solid rgba(225, 225, 225, 0.2);
-  border-left: 1px solid rgba(225, 225, 225, 0.1);
-  border-right: 1px solid rgba(225, 225, 225, 0.3);
-  z-index: 2;
 }
-.drop-shadow > span {
+
+.slide:nth-of-type(1) {
+  background: #D7A151;
+}
+
+.slide:nth-of-type(2) {
+  background: #F4E4CD;
+}
+
+.slide:nth-of-type(3) {
+  background: #C75534;
+}
+
+.slide:nth-of-type(4) {
+  background: #D1D1D4;
+}
+
+.slide_buttons {
+  left: 0;
   position: absolute;
-  z-index: 5;
-  color: white;
-  font-size: 4em;
-  letter-spacing: 0.75em;
-  padding-left: 0.375em;
+  right: 0;
+  text-align: center;
+height: 100%;
+}
+
+a.slide_btn {
+  color: #474544;
+  font-size: 42px;
+  margin: 0 0.175em;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.slide_btn.active, .slide_btn:hover {
+  color: #428CC6;
+  cursor: pointer;
+}
+
+.directional_nav {
+  height: 340px;
+  margin: 0 auto;
+  max-width: 100%;
+  position: relative;
+  top: -250px;
+}
+
+.previous_btn {
+  bottom: 0;
+  left: 100px;
+  margin: auto;
+  position: absolute;
+  top: 0;
+}
+
+.next_btn {
+  bottom: 0;
+  margin: auto;
+  position: absolute;
+  right: 100px;
+  top: 0;
+}
+
+.previous_btn, .next_btn {
+  cursor: pointer;
+  height: 65px;
+  opacity: 0.5;
+  -webkit-transition: opacity 0.4s ease-in-out;
+  -moz-transition: opacity 0.4s ease-in-out;
+  -ms-transition: opacity 0.4s ease-in-out;
+  -o-transition: opacity 0.4s ease-in-out;
+  transition: opacity 0.4s ease-in-out;
+  width: 65px;
+}
+
+.previous_btn:hover, .next_btn:hover {
+  opacity: 1;
+}
+
+@media only screen and (max-width: 767px) {
+  .previous_btn {
+    left: 50px;
+  }
+  .next_btn {
+    right: 50px;
+  }
 }
