@@ -13,7 +13,7 @@ header {
 
 
 body {
-  background: linear-gradient(to right, #6fc2d0,#90c8d1, #6fc2d0);
+  background: linear-gradient(to bottom right, #6bb9c5 0%, #eced89 100%);
 }
 body.fade {
   transition: 0.6s ease-in-out;
