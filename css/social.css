@@ -310,6 +310,33 @@ a {
   }
 }
 
+p.serif {
+  font-family: "Petrona", serif;
+}
+
+p.sansserif {
+  font-family: "Brandon Grotesque", sans-serif;
+}
+
+h1.serif {
+  font-family: "Petrona", serif;
+	font-size: 30px;
+	color: #fff;
+}
+
+h1.sansserif {
+  font-family: "Brandon Grotesque", sans-serif;
+}
+
+h3.serif {
+  font-family: "Petrona", serif;
+}
+
+p {
+  font-size: 23px;
+}
+
+
 
 .jello-horizontal {
 	-webkit-animation: jello-horizontal 0.9s both;
