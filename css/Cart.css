@@ -1,0 +1,273 @@
+/* CSS Document */
+ul{
+/*	position:fixed;*/
+	list-style-type: none;
+	margin-top: 0;
+	padding: 0;
+	width : 100%;
+	overflow: hidden;
+	background-color: #e2bebe;
+	
+}
+
+li {
+  float: left;
+} 
+
+
+li a{
+	display: block;
+	width: 160px;
+	transition: 1s;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+}
+
+li a.active{
+	background-color: #b96b9f;
+	color: white;
+}
+
+li a.heighlight{
+	background-color: #f5f687;
+	color: black;
+}
+
+li a:hover:not(.active){
+	background-color: #f5f687;
+	color: black;
+	width: 180px;
+}
+
+body{
+	padding: 0;
+	margin: 0;
+	font-family: sans-serif;
+	background: linear-gradient(to bottom right, #6bb9c5 0%, #eced89 100%);
+}
+
+div{
+	margin-top: 100px;
+}
+
+section {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 80%;
+	margin-bottom: 50px;
+}
+header {
+/*	color: white;  more readable on an orange background */
+/*	padding-top: 40px;*/
+/*	background: linear-gradient(to bottom right, #6bb9c5 0%, #eced89 100%);*/
+}
+
+p.serif {
+  font-family: "Petrona", serif;
+}
+
+p.sansserif {
+  font-family: "Brandon Grotesque", sans-serif;
+}
+
+h1.serif {
+  font-family: "Petrona", serif;
+	font-size: 30px;
+	color: #fff;
+}
+
+h1.sansserif {
+  font-family: "Brandon Grotesque", sans-serif;
+}
+
+h3.serif {
+  font-family: "Petrona", serif;
+}
+
+p {
+  font-size: 23px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+/*
+body {
+    background-color: #F2EEE9;
+    font: normal 13px/1.5 Georgia, Serif;
+    color: #333;
+}
+*/
+.wrapper {
+    width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+	height: 650px;
+}
+h5 {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    font-size: 20px;
+    font-weight: normal;
+    text-transform: uppercase;
+    padding: 4px 20px;
+    float: left;
+}
+.clear {
+    clear: both;
+}
+.items {
+    display: block;
+    margin: 20px 0;
+}
+.item {
+    background-color: #fff;
+    float: left;
+    margin: 0 10px 10px 0;
+    width: 300px;
+    padding: 10px;
+    height: 450px;
+}
+.item img {
+    display: block;
+    margin: auto;
+}
+h6 {
+    font-size: 16px;
+    display: block;
+    border-bottom: 1px solid #ccc;
+    margin: 0 0 10px 0;
+    padding: 0 0 5px 0;
+}
+button {
+    border: 1px solid #722A1B;
+    padding: 4px 14px;
+    background-color: #fff;
+    color: #722A1B;
+    text-transform: upperc ase;
+    margin: 15px 90px;
+    font-weight: bold;
+    cursor: pointer;
+}
+span {
+    float: right;
+}
+.shopping-cart {
+    display: inline-block;
+    background: url('http://cdn1.iconfinder.com/data/icons/jigsoar-icons/24/_cart.png') no-repeat 0 0;
+    width: 24px;
+    height: 24px;
+    margin: 0 0px 0 0;
+}
+
+.header__main {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+  text-align: left;
+}
+
+.slider {
+  width: 100vw;
+  height: 100vh;
+}
+
+.slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: absolute;
+  width: 100%;
+}
+.slide:target .slide__bg {
+  opacity: 1;
+}
+.slide:target .slide__image {
+  -webkit-transform: translate(0);
+          transform: translate(0);
+  opacity: 1;
+  transition-delay: 0.5s;
+  -webkit-filter: blur(0) drop-shadow(0px 10px 30px rgba(0, 0, 0, 0.35));
+          filter: blur(0) drop-shadow(0px 10px 30px rgba(0, 0, 0, 0.35));
+}
+
+.slide__bg {
+  position: absolute;
+  z-index: 0;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) scale(2);
+          transform: translate(-50%, -50%) scale(2);
+  -webkit-filter: blur(50px);
+          filter: blur(50px);
+  opacity: 0;
+  transition: opacity 1s ease;
+  will-change: opacity;
+}
+
+.slide__images {
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  height: 365px;
+  margin: 0 20px;
+}
+
+.slide__image {
+  position: absolute;
+  width: 100%;
+  opacity: 0;
+  transition: all 0.5s ease-in-out 0s;
+  -webkit-filter: blur(10px) drop-shadow(0px 10px 30px rgba(0, 0, 0, 0.35));
+          filter: blur(10px) drop-shadow(0px 10px 30px rgba(0, 0, 0, 0.35));
+  will-change: transform, opacity, filter;
+}
+.slide__image svg {
+  display: block;
+}
+.slide__image--left {
+  -webkit-transform: translate(0.75%, -10px);
+          transform: translate(0.75%, -10px);
+}
+.slide__image--right {
+  top: 5vmin;
+  -webkit-transform: translate(-0.75%, 10px);
+          transform: translate(-0.75%, 10px);
+}
+
+.slider__pagination {
+  position: absolute;
+  bottom: 7vh;
+  width: 100%;
+  text-align: center;
+}
+
+.button {
+  position: relative;
+  display: inline-block;
+  padding: 20px 40px;
+  border: 2px solid #fff;
+  line-height: 1;
+  font: 600 12px 'Montserrat', sans-serif;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: white;
+  transition: all 0.25s ease;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+.button:hover {
+  color: #333;
+  background-color: white;
+}
+
+

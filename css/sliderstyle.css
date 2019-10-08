@@ -1,106 +1,20 @@
-
-ul{
-/*	position:fixed;*/
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	width : 100%;
-	overflow: hidden;
-	background-color: #e2bebe;
-	
-}
-
-li {
-  float: left;
-} 
-
-
-li a{
-	display: block;
-	width: 160px;
-	transition: 1s;
-	color: #f2f2f2;
-	text-align: center;
-	padding: 14px 16px;
-	text-decoration: none;
-	font-size: 17px;
-}
-
-li a.active{
-	background-color: #b96b9f;
-	color: white;
-}
-
-li a.heighlight{
-	background-color: #f5f687;
-	color: black;
-}
-
-li a:hover:not(.active){
-	background-color: #f5f687;
-	color: black;
-	width: 180px;
-}
-
-body{
-	padding: 0;
-	margin: 0;
-	font-family: sans-serif;
-	background: linear-gradient(to bottom right, #6bb9c5 0%, #eced89 100%);
-}
-
-section {
-
-/*	margin-top:20px;*/
-	margin-bottom:20px;
-	max-width: 80%;
-	margin-left: auto;
-	margin-right: auto;
-}
-header {
-	
-	background-color: #6fc2d0;
-	color: white; /* more readable on an orange background */
-	padding-top: 50px;
-	padding-bottom: 50px;
-}
-
-p.serif {
-  font-family: "Petrona", serif;
-}
-
-p.sansserif {
-  font-family: "Brandon Grotesque", sans-serif;
-}
-
-h1.serif {
-  font-family: "Petrona", serif;
-	font-size: 30px;
-	color: #fff;
-}
-
-h1.sansserif {
-  font-family: "Brandon Grotesque", sans-serif;
-}
-
-h3.serif {
-  font-family: "Petrona", serif;
-}
-
-p {
-  font-size: 20px;
+html, body {
+  background: #F7F5E6;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
 }
 
 .slider {
   margin: 0 auto;
-  width: 100%;
+  max-width: 940px;
 }
 
 .slide_viewer {
-  height: 550px;
+  height: 340px;
   overflow: hidden;
   position: relative;
-	width: 100%;
 }
 
 .slide_group {
@@ -141,7 +55,6 @@ p {
   position: absolute;
   right: 0;
   text-align: center;
-	margin-top: 40px;
 }
 
 a.slide_btn {
@@ -161,11 +74,11 @@ a.slide_btn {
 }
 
 .directional_nav {
-  height: 100px;
+  height: 340px;
   margin: 0 auto;
-  max-width: 100%;
+  max-width: 940px;
   position: relative;
-/*	top:-80px;*/
+  top: -340px;
 }
 
 .previous_btn {
@@ -208,10 +121,3 @@ a.slide_btn {
     right: 50px;
   }
 }
-
-.logo{
-	display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-

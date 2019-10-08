@@ -1,0 +1,165 @@
+div {
+	max-width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+	max-height: 890px;
+}
+
+header {
+	color: white; /* more readable on an orange background */
+/*	padding-top: 50px;*/
+	padding-bottom: 50px;
+}
+
+
+body {
+  background: linear-gradient(to bottom right, #6bb9c5 0%, #eced89 100%);
+}
+body.fade {
+  transition: 0.6s ease-in-out;
+}
+
+.colours {
+  display: flex;
+  flex-direction: column;
+}
+.colours__labels {
+  display: flex;
+  margin-bottom: 0.5em;
+}
+.colours__labels span {
+  display: block;
+  flex: 2;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.9em;
+  color: white;
+  text-shadow: 0px 0px 4px black;
+}
+.colours__labels span:first-child {
+  flex: 1;
+}
+.colours__inputs {
+  display: flex;
+}
+.colours .jscolor {
+  display: block;
+  border: 0;
+  height: 40px;
+  width: 60px;
+  margin: 0;
+  text-align: center;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+.colours .jscolor:first-child {
+  border-radius: 6px 0 0 6px;
+}
+
+.couch {
+  width: 626px;
+  height: 1084px;
+  -webkit-transform: scale(0.66);
+          transform: scale(0.66);
+  position: relative;
+  transition: 0.25s ease-in-out;
+}
+.couch__overlay, .couch__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.couch__overlay {
+  z-index: 2;
+  fill: #ffd4eb;
+  mix-blend-mode: multiply;
+}
+.couch__overlay.fade {
+  transition: 0.6s ease-in-out;
+}
+
+.gen-random {
+  background: #222;
+  border: 0;
+  color: white;
+  border-radius: 0 6px 6px 0;
+  border-left: 1px solid white;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	width : 100%;
+	overflow: hidden;
+	background-color: #e2bebe;
+	
+}
+
+p.serif {
+  font-family: "Petrona", serif;
+}
+
+p.sansserif {
+  font-family: "Brandon Grotesque", sans-serif;
+}
+
+h1.serif {
+  font-family: "Petrona", serif;
+	font-size: 30px;
+	color: #fff;
+}
+
+h1.sansserif {
+  font-family: "Brandon Grotesque", sans-serif;
+}
+
+h3.serif {
+  font-family: "Petrona", serif;
+}
+
+p {
+  font-size: 23px;
+}
+
+
+li {
+  float: left;
+} 
+
+
+li a{
+	display: block;
+	width: 160px;
+	transition: 1s;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+}
+
+li a.active{
+
+	background-color: #b96b9f;
+	color: white;
+}
+li a.heighlight{
+	background-color: #f5f687;
+	color: black;
+}
+
+li a:hover:not(.active){
+	background-color: #f5f687;
+	color: black;
+	width: 180px;
+}
+
+section {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 80%;
+	margin-bottom: 50px;
+}
